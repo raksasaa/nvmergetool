@@ -18,8 +18,12 @@ def split_data_file(in_file_name):
     data_file = open(in_file_name,'r')
     data = data_file.readlines()
     
+    #FIXME THESE TWO FILES NEED BE CREATE AS TMP FILE
     #get tmp file name as out_tmp_file_modem_0
+    out_tmp_file_modem_0='out_tmp_file_modem_0.txt'
     #get tmp file name as out_tmp_file_modem_1
+    out_tmp_file_modem_1='out_tmp_file_modem_1.txt'
+    
     modem_0 = open(out_tmp_file_modem_0,'w')
     modem_1 = open(out_tmp_file_modem_1,'w')
 
